@@ -1,0 +1,19 @@
+;;; `ptemplate-var-module` --- ${1:short description} -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2020  `user-full-name`
+
+;; Author: `user-full-name` <`user-mail-address`>
+;; URL: `(format user-repo-host ptemplate-var-pname)`
+;; Package-Requires: ((emacs 25.1))
+;; Version: 0.0.1
+
+;;; Commentary:
+;; ${3:long description}
+
+;;; Code:
+
+(require 'cl-lib)
+(require 'subr-x)
+
+(provide '`ptemplate-var-pname`)
+;;; `ptemplate-var-module` ends here
