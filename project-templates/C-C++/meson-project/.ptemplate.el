@@ -9,6 +9,7 @@
 ;; Silence warnings: 'ptemplate is always provided before expansion. Also needed
 ;; for byte-compilation.
 (require 'ptemplate)
+(require 'projectile) ;; used in yasnippets
 
 (ptemplate!
  :ignore "\\.gitkeep" "/README.md"
