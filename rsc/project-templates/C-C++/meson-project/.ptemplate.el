@@ -18,6 +18,6 @@
   (completing-read "Select a language: " '("c" "cpp") nil t))
  (ptemplate-var-main-file (format "src/main.%s" ptemplate-var-language))
  :remap ("/src/main.c.yas" ptemplate-var-main-file)
- :open ptemplate-var-main-file)
+ :nokill ptemplate-var-main-file)
 
 ;;; .ptemplate.el ends here

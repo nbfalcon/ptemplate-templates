@@ -12,8 +12,7 @@
 
 ;;; Code:
 
-(require 'cl-lib)
-(require 'subr-x)
+${4:}
 
 (provide '`ptemplate-var-pname`)
 ;;; `ptemplate-var-module` ends here
