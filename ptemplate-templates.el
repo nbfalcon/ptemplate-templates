@@ -18,7 +18,7 @@
 ;; Author: Nikita Bloshchanevich <nikblos@outlook.com>
 ;; URL: https://github.com/nbfalcon/ptemplate-templates
 ;; Package-Requires: ((emacs "25.1") (ptemplate "2.0.0"))
-;; Version: 2.0.0
+;; Version: 0.1.0
 
 ;;; Commentary:
 ;; This modules provides a loader for the collection of `ptemplate' templates in
