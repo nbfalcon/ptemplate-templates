@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(require 'ptemplate) ;; silence warnings
+(require 'ptemplate)
 (require 'projectile)
 
 (ptemplate!

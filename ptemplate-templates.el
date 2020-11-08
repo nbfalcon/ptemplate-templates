@@ -21,13 +21,18 @@
 ;; Version: 0.1.0
 
 ;;; Commentary:
-;; This modules provides a loader for the collection of `ptemplate' templates in
-;; this repository. To use it, simply install the package; it will automatically
-;; (using autoloads) integrate with `ptemplate', making its templates show up in
-;; `ptemplate-new-project' and `ptemplate-expand-template' (TODO).
+;; This package provides the official collection of `ptemplate' templates and a
+;; convenient loader plugin for them. The templates here can be enabled by
+;; simply turning on `ptemplate-templates-mode'. If the templates are no longer
+;; wanted, `ptemplate-templates-mode' can also be turned off like any other
+;; minor-mode.
 ;;
-;; If you cannot use the autoloads of this package, add the following to your
-;; .init.el: (eval-after-load 'ptemplate (ptemplate-templates-mode 1))
+;; The following configuration snippet will correctly configure
+;; `ptemplate-templates:'
+;; (eval-after-load 'ptemplate (ptemplate-templates-mode 1))
+;;
+;; Currently, only a few project templates are provided; other templates are
+;; coming soon. New ones can be requested by opening an issue on github.
 
 ;;; Code:
 
@@ -88,13 +93,6 @@ available to `ptemplate-new-project' and
              (mapc (apply-partially
                     #'ptemplate-templates--remove-from-list var)
                    (mapcar #'ptemplate-templates--rsc rsc-dirs))))))
-
-;;; auto-configure
-;; `yasnippet-snippets' also configures itself in an autoloaded
-;; `eval-after-load' block, so doing that probably is acceptable.
-;; REVIEW: is this a good idea?
-;;;###autoload
-(eval-after-load 'ptemplate (ptemplate-templates-mode 1))
 
 (provide 'ptemplate-templates)
 ;;; ptemplate-templates.el ends here

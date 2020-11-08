@@ -6,18 +6,16 @@
 
 ;;; Code:
 
-;; Silence warnings: 'ptemplate is always provided before expansion. Also needed
-;; for byte-compilation.
 (require 'ptemplate)
-(require 'projectile) ;; used in yasnippets
+(require 'projectile)                   ; needed by snippets
 
 (ptemplate!
- :ignore "\\.gitkeep" "/README.md"
- :snippet-let
- (ptemplate-var-language
-  (completing-read "Select a language: " '("c" "cpp") nil t))
- (ptemplate-var-main-file (format "src/main.%s" ptemplate-var-language))
- :remap ("/src/main.c.yas" ptemplate-var-main-file)
- :nokill ptemplate-var-main-file)
+  :ignore "\\.gitkeep" "/README.md"
+  :snippet-let
+  (ptemplate-var-language
+   (completing-read "Select a language: " '("c" "cpp") nil t))
+  (ptemplate-var-main-file (format "src/main.%s" ptemplate-var-language))
+  :remap ("/src/main.c.yas" ptemplate-var-main-file)
+  :nokill ptemplate-var-main-file)
 
 ;;; .ptemplate.el ends here
