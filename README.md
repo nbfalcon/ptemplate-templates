@@ -8,15 +8,8 @@ already supports this, trough `ptemplate-expand-template`).
 
 # Installation
 
-Currently this package is not yet on `MELPA`, but a PR for that is already in
-review. It can still be installed from github, for example with
-[`quelpa-use-package`](https://github.com/quelpa/quelpa-use-package):
-
-``` emacs-lisp
-(use-package ptemplate-templates
-  :quelpa (ptemplate-templates :fetcher github
-                               :repo "nbfalcon/ptemplate-templates"))
-```
+This package is on `MELPA`, and can therefore be installed trough usual means
+(`package-install`, `use-package`, …). Additional set-up is needed though:
 
 # Set-up
 
@@ -37,8 +30,8 @@ If `use-package` is available:
   :config (ptemplate-templates-mode 1))
 ```
 
-It can of course also be turned off (`(ptemplate-templates-mode -1)`), causing
-the templates to become unavailable again.
+It can also be turned off (`(ptemplate-templates-mode -1)`), causing the
+templates to become unavailable again.
 
 # Additional dependencies
 
