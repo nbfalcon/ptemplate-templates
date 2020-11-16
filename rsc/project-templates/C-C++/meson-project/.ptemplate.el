@@ -7,7 +7,7 @@
 ;;; Code:
 
 (require 'ptemplate)
-(require 'projectile)                   ; needed by snippets
+(require 'ptemplate-templates)          ; utils needed by snippets
 
 (ptemplate!
   :ignore "\\.gitkeep" "/README.md"

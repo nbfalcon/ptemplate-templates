@@ -21,6 +21,7 @@
 ;; Version: 0.1.0
 
 ;;; Commentary:
+
 ;; This package provides the official collection of `ptemplate' templates and a
 ;; convenient loader plugin for them. The templates here can be enabled by
 ;; simply turning on `ptemplate-templates-mode'. If the templates are no longer
@@ -93,6 +94,13 @@ available to `ptemplate-new-project' and
              (mapc (apply-partially
                     #'ptemplate-templates--remove-from-list var)
                    (mapcar #'ptemplate-templates--rsc rsc-dirs))))))
+
+;;; template utilities
+(defun ptemplate-templates--project-name ()
+  "Return the name of the project being generated.
+Useful in project templates."
+  (defvar ptemplate-target-directory)
+  (file-name-nondirectory (directory-file-name ptemplate-target-directory)))
 
 (provide 'ptemplate-templates)
 ;;; ptemplate-templates.el ends here
