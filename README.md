@@ -17,7 +17,7 @@ After installing this package, the templates here have to be explicitly enabled.
 For this, an auto-loaded minor-mode has been provided:
 
 ``` emacs-lisp
-(eval-after-load 'ptemplate (ptemplate-templates-mode 1))
+(eval-after-load 'ptemplate '(ptemplate-templates-mode 1))
 ```
 
 If `use-package` is available:
