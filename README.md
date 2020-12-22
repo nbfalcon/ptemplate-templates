@@ -32,8 +32,3 @@ If `use-package` is available:
 
 It can also be turned off (`(ptemplate-templates-mode -1)`), causing the
 templates to become unavailable again.
-
-# Additional dependencies
-
-The various templates in this repository may have additional dependencies.
-Consult their READMEs for details.
