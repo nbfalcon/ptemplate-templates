@@ -9,6 +9,5 @@ content:
   
 # Configuration
 
-This template requires the variable `user-repo-host` to be a format string
-taking a single %s, which, `format`ed with the project name will be used as the
-`URL: ` package metadata.
+This configuration makes use of the `ptemplate-templates-repository-url-format`
+(which see) variable to derive the `URL:` package attribute.

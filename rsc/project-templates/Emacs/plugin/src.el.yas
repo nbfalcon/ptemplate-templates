@@ -16,7 +16,7 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;; Author: `user-full-name` <`user-mail-address`>
-;; URL: `(format user-repo-host ptemplate-var-pname)`
+;; URL: `(format ptemplate-templates-repository-url-format ptemplate-var-pname)`
 ;; Package-Requires: ((emacs 25.1))
 ;; Version: 0.0.1
 

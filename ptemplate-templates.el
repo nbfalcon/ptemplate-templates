@@ -95,6 +95,23 @@ available to `ptemplate-new-project' and
                     #'ptemplate-templates--remove-from-list var)
                    (mapcar #'ptemplate-templates--rsc rsc-dirs))))))
 
+;;; customization
+
+(defcustom ptemplate-templates-repository-url-format
+  (format "https://github.com/%s/%%s" (user-real-login-name))
+  "A `format' string for github repositories.
+This string will be `format'ted with one argument, the name of a
+project, which should yield a browser-visitable URL pointing to
+the (possibly future) project's repository.
+
+The Emacs-plugin template uses this to derive the URL: attribute,
+for example.
+
+Given that the default is probably wrong, this should be
+customized."
+  :type 'string
+  :group 'ptemplate-templates)
+
 ;;; template utilities
 
 (defun ptemplate-templates--project-name ()
