@@ -44,7 +44,7 @@
    (cond (load-in-progress load-file-name)
          ((and (boundp 'byte-compile-current-file) byte-compile-current-file))
          (t (buffer-file-name))))
-  "Absolute path to the \"rsc/\" directory of this repository.")
+  "Absolute path to `ptemplate-templates'.")
 
 (defun ptemplate-templates--rsc (path)
   "Expand PATH relative to `ptemplate-templates--rsc-dir'.
