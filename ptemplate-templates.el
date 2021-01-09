@@ -96,6 +96,7 @@ available to `ptemplate-new-project' and
                    (mapcar #'ptemplate-templates--rsc rsc-dirs))))))
 
 ;;; template utilities
+
 (defun ptemplate-templates--project-name ()
   "Return the name of the project being generated.
 Useful in project templates."
