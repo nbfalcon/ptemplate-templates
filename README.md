@@ -24,8 +24,6 @@ If `use-package` is available:
 
 ``` emacs-lisp
 (use-package ptemplate-templates
-  ;; `ptemplate-templates-mode' is auto-loaded
-  :no-require t
   :after (ptemplate)
   :config (ptemplate-templates-mode 1))
 ```
