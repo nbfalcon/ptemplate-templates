@@ -15,6 +15,7 @@
   (ptemplate-var-language
    (completing-read "Select a language: " '("c" "cpp") nil t))
   (ptemplate-var-main-file (format "src/main.%s" ptemplate-var-language))
+  (ptemplate-var-pname (ptemplate-templates--project-name))
   :remap ("/src/main.c.yas" ptemplate-var-main-file)
   :nokill ptemplate-var-main-file)
 
