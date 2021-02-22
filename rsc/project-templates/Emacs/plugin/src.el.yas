@@ -18,7 +18,7 @@
 ;; Author: `user-full-name` <`user-mail-address`>
 ;; URL: `(format ptemplate-templates-repository-url-format ptemplate-var-pname)`
 ;; Package-Requires: ((emacs "25.1"))
-;; Version: 0.0.1
+;; Version: 0.1.0
 
 ;;; Commentary:
 
