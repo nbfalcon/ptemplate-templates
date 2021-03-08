@@ -1,4 +1,4 @@
-;;; `ptemplate-var-module` --- ${1:short description} -*- lexical-binding: t; -*-
+;;; `ptemplate-var-module` --- ${1:FIXME short description} -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020  `user-full-name`
 
@@ -22,7 +22,7 @@
 
 ;;; Commentary:
 
-;; ${3:long description}
+;; ${3:FIXME long description}
 
 ;;; Code:
 
