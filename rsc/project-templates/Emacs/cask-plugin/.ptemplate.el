@@ -10,6 +10,6 @@
 
 (ptemplate!
   :ignore "/README.md"
-  :inherit (ptemplate-source "../plugin/"))
+  :inherit-rel "../plugin/")
 
 ;;; .ptemplate.el ends here
